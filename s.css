@@ -1,0 +1,171 @@
+*{margin: 0;padding: 0;}
+body{
+    background: url("body-back.png");
+    -webkit-transform: translateZ(0);
+       -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+         -o-transform: translateZ(0);
+            transform: translateZ(0);
+}
+
+.b-widget
+{
+    padding: 40px 0;
+
+    -webkit-perspective: 1000;
+       -moz-perspective: 1000;
+        -ms-perspective: 1000;
+         -o-perspective: 1000;
+            perspective: 1000;
+}
+
+.b-widget__cube
+{
+    position: relative;
+
+    /*height: 200px;*/
+    width: 300px;
+
+    margin: auto;
+
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+         -o-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 1s ease-out;
+       -moz-transition: -moz-transform 1s ease-out;
+        -ms-transition: -ms-transform 1s ease-out;
+         -o-transition: -o-transform 1s ease-out;
+            transition: transform 1s ease-out;
+    -webkit-transform: rotateY(0deg) translateZ(-150px);
+       -moz-transform: rotateY(0deg) translateZ(-150px);
+        -ms-transform: rotateY(0deg) translateZ(-150px);
+         -o-transform: rotateY(0deg) translateZ(-150px);
+            transform: rotateY(0deg) translateZ(-150px);
+}
+
+.b-widget__screen
+{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    padding: 10px;
+    border: 2px solid #EEE;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    color: #333;
+    opacity: .95;
+    background: #fafafa;
+
+    font-weight: bold;
+    text-shadow: 0 1px 0 #fff;
+
+    /*-webkit-backface-visibility: hidden;*/
+    -webkit-transform: translateZ(150px);
+       -moz-transform: translateZ(150px);
+        -ms-transform: translateZ(150px);
+         -o-transform: translateZ(150px);
+            transform: translateZ(150px);
+}
+.b-widget__screen_type_main
+{
+    position: relative;
+}
+
+.b-widget__screen_side_left
+{
+    -webkit-transform: rotateY(-90deg) translateZ(150px);
+       -moz-transform: rotateY(-90deg) translateZ(150px);
+        -ms-transform: rotateY(-90deg) translateZ(150px);
+         -o-transform: rotateY(-90deg) translateZ(150px);
+            transform: rotateY(-90deg) translateZ(150px);
+}
+.b-widget__screen_side_right
+{
+    -webkit-transform: rotateY(90deg) translateZ(150px);
+       -moz-transform: rotateY(90deg) translateZ(150px);
+        -ms-transform: rotateY(90deg) translateZ(150px);
+         -o-transform: rotateY(90deg) translateZ(150px);
+            transform: rotateY(90deg) translateZ(150px);
+}
+.b-widget__screen_side_back
+{
+    -webkit-transform: rotateY(180deg) translateZ(150px);
+       -moz-transform: rotateY(180deg) translateZ(150px);
+        -ms-transform: rotateY(180deg) translateZ(150px);
+         -o-transform: rotateY(180deg) translateZ(150px);
+            transform: rotateY(180deg) translateZ(150px);
+    text-align: center;
+}
+
+.b-controls
+{
+    width: 100%;
+}
+.b-controls__button
+{
+    display: block;
+    position: absolute;
+    top: 200px;
+
+    height: 100px;
+    width: 100px;
+    background : #444;
+    opacity: .15;
+
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    vertical-align: middle;
+
+    text-decoration: none;
+
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+.b-controls__button_route_left
+{
+    left: -53px;
+}
+.b-controls__button_route_right
+{
+    right: -52px;
+}
+
+.b-link
+{
+    /*color: #c18d11;*/
+    color: #1191c1;
+
+    text-decoration: none;
+}
+
+.b-menu
+{
+    list-style: none;
+
+    padding-left: 10px;
+}
+
+.b-ico__ghibli
+{
+    position: absolute;
+    right: -10px;
+    bottom: -17px;
+
+    height: 100px;
+}
+
+.b-ico__qr
+{
+    height: 170px;
+    background: url('i/qrm.png') no-repeat center;
+}
