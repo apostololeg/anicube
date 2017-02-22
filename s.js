@@ -6,7 +6,7 @@ var widget = $('.b-widget'),
     _stepAngle = 90,
     rotate = function(angle) {
         cube.css('pointer-events', 'none');
-        cube.bind('webkitTransitionEnd', function() {
+        cube.on('webkitTransitionEnd', function() {
             cube.css('pointer-events', 'auto');
         });
 
@@ -15,7 +15,7 @@ var widget = $('.b-widget'),
         return false;
     };
 
-widget.bind('click', function(e) {
+widget.on('click', function(e) {
     if (!_isMove && e.target.tagName != 'A') {
         rotate(( e.pageX > widget.width()/2 ) ? _stepAngle : -_stepAngle);
     }
